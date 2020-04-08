@@ -278,7 +278,7 @@ class SessionCookieAwareTraitTest extends TestCase
     {
         $cookieName  = 'PHPSESSID';
         $cookieValue = 'a-cookie-value';
-        $cookieSameSite = 'lax';
+        $cookieSameSite = 'Lax';
 
         $consumer = $this->createConsumerInstance($cookieName, null, null, null, null, null, $cookieSameSite);
         $setCookie = $consumer->createSessionCookieForResponse($cookieValue);
